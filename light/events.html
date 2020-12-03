@@ -1,0 +1,1275 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Events</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Template Google Fonts -->
+    <link href="../../../fonts.googleapis.com/cssdda2.css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="../../../fonts.googleapis.com/cssab6d.css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/preloader.min.css" rel="stylesheet">
+    <link href="css/circle.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- CSS Skin File -->
+    <link href="css/skins/yellow.css" rel="stylesheet">
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+
+    <!-- Modernizr JS File -->
+    <script src="js/modernizr.custom.js"></script>
+
+
+    <style type="text/css">
+        html
+        {
+            scroll-behavior: smooth;
+            height: 100%;
+            width: 100%;
+
+        }
+    </style>
+    <!-- Always get the latest version -->
+<!-- Not recommended for production sites! -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+<!-- Get minor updates and patch fixes within a major version -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+<!-- Get patch fixes within a minor version -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+<!-- Get a specific version -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+</head>
+
+<body class="blog light">
+
+
+<!-- Live Style Switcher Starts - demo only -->
+<div id="switcher" class="">
+    <div class="content-switcher">
+        <h4>STYLE SWITCHER</h4>
+        <ul>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
+            </li>
+        </ul>
+        <a href="../dark/events.html" class="waves-effect waves-light font-weight-700 purchase"><i class="fa fa-moon-o"></i>Dark</a>
+        <div id="hideSwitcher">&times;</div>
+    </div>
+</div>
+<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+<!-- Live Style Switcher Ends - demo only -->
+
+
+<!-- Header Starts -->
+<header class="header" id="navbar-collapse-toggle">
+    <!-- Fixed Navigation Starts -->
+    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+        <li class="icon-box ">
+            <i class="fa fa-home"></i>
+            <a href="light.html">
+                <h2>Home</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-user"></i>
+            <a href="about.html">
+                <h2>About</h2>
+            </a>
+        </li>
+        <li class="icon-box active">
+            <i class="fa fa-briefcase"></i>
+            <a href="events.html">
+                <h2>Events</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa fa-code"></i>
+            <a href="project.html">
+                <h2>Projects</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-phone"></i>
+            <a href="contact.html">
+                <h2>Contact</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-thermometer-empty"></i>
+            <a href="covid.html">
+                <h2>Covid19</h2>
+            </a>
+        </li>
+    </ul>
+    <!-- Fixed Navigation Ends -->
+
+    
+    <!-- Mobile Menu Starts -->
+    <nav role="navigation" class="d-block d-lg-none">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="list-unstyled" id="menu">
+                 
+                <li><a href="light.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                <li  class="active"><a href="events.html"><i class="fa fa-folder-open"></i><span>Events</span></a></li>
+                <li><a href="project.html"><i class="fa fa fa-code"></i><span>projects</span></a></li>
+                <li><a href="contact.html"><i class="fa fa-phone"></i><span>contact</span></a></li>
+                <li><a href="covid.html"><i class="fa fa-thermometer-empty"></i><span>covid19</span></a></li>
+                 <a href="../dark/events.html" class="btn btn-about mt-4 ml-4 text-dark"><i class="fa fa-moon-o"></i> Dark </a>
+            </ul>
+
+        </div>
+    </nav>
+    <!-- Mobile Menu Ends -->
+</header>
+<!-- Header Ends -->
+
+
+
+<!-- Page Title Starts -->
+<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+    <h1>Our<span> EVENTS</span></h1>
+    <span class="title-bg">UEM</span>
+</section>
+<!-- Page Title Ends -->
+
+
+
+
+
+ <div class="container">
+        <div class="row">
+
+            <!-- Personal Info Starts -->
+               <div class="col-12 col-lg-3 col-xl-3  mt-5" style="height:450px;">
+             
+               <div class="row mt-5" style="height:450px;">
+                        
+                         <div class="col-lg-12"><a  data-scroll href="#a" class="btn btn-about  btn-default btn-lg btn-block ">
+                         WORKSHOP</a>
+                         </div> 
+                        <div class="col-lg-12 "><a  data-scroll href="#b" class="btn btn-about btn-default btn-lg btn-block">GAMING</a>
+                        </div> 
+                        <div class="col-lg-12 "><a data-scroll href="#c" class="btn btn-about btn-default btn-lg btn-block">CIRCUITS</a>
+                        </div>
+                        <div class="col-lg-12 "><a data-scroll href="#d" class="btn btn-about btn-default btn-lg btn-block">DESIGNING</a>
+                        </div>
+                        <div class="col-lg-12  "><a  data-scroll href="#e" class="btn btn-about btn-default btn-lg btn-block">TALENT HUNT</a>
+                        </div>
+                        <div class="col-lg-12 "><a  data-scroll href="#f" class="btn btn-about btn-default btn-lg btn-block">QUIZZES </a>
+                        </div>
+                        <div class="col-lg-12 "><a  data-scroll href="#g" class="btn btn-about btn-default btn-lg btn-block">TECH & FUN</a>
+                        </div>
+             
+               </div>
+
+               </div>
+            <!-- Personal Info Ends -->
+
+            <!-- Boxes Starts -->
+                <div class="col-12 col-lg-9 col-xl-9 colorder-1 col-sm-pull-4 mt-5">
+                  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                 <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_VeqtOe.json"  background="transparent"  speed="1"  style="width: ; height: 450px;"  loop  autoplay></lottie-player>
+                
+                </div>
+            <!-- Boxes Ends -->
+
+            
+          
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+           <hr class="separator mt-5" id="a" >
+            <div class="col-12" >
+                <h3 class="text-uppercase pb-5 mb-0 text-center text-sm-center custom-title ft-wt-600" style="font-family: 'Aclonica', sans-serif;">Workshop</h3>
+            </div>
+
+<!-- *****************************************workshop*********************************************** -->
+
+
+
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <!-- Articles Starts -->
+        <div class="row">
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href=" " class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/Workshops/1.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" "> Human Bone Anatomy</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                              <span class=" ">Date :</span> 5th, 6th October, 2020<br>
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/1yWiLYLMqa18FsxJdKOwWXQfY2nNAodcS/view?usp=sharing"> Click Me</a><br>
+                           
+                           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdw0CwKhSgIDvBQGD-0-InaJQy5x-eLWeLyzpnDN_k76lRpVA/viewform" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href="https://www.facebook.com/photo.php?fbid=359761144959631&set=t.100014898183375&type=3" class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/Workshops/2.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">BIM</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                             <span class=" ">Date:</span> 7th October, 2020<br>
+                    
+                            
+                           <a href="https://docs.google.com/forms/d/1-Glb6gH6Uy5jSv27rQrDu4iXqEDHAb9qc6gzpQIxP_s/viewform?edit_requested=true" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href="https://www.facebook.com/photo.php?fbid=359761144959631&set=t.100014898183375&type=3" class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/Workshops/3.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">CIRCUITRICKS</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                             <span class=" ">Date:</span> 8th October<br>
+                             <span class=" ">Detalis:</span><a href="https://drive.google.com/file/d/1iH3JUVo9YStaIxDu6jy3sXjyoTmxmDZ1/view?usp=sharing"> Click Me</a><br>
+                           
+                           <a href="https://docs.google.com/forms/d/1MT_pHHpV9UAKMkboqeZd07wG0wT3npWbBX_ZERYS2WY/viewform?edit_requested=true" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href="https://www.facebook.com/photo.php?fbid=359761144959631&set=t.100014898183375&type=3" class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/Workshops/4.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">AutoCAD</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                             <span class=" ">Date:</span> 10th October, 2020<br>
+                            
+                           
+                           <a href="https://docs.google.com/forms/d/1ISMnslIAhYbAhWLC5fEnP6ofeGnFDWHXuvPG9OxObSY/viewform?edit_requested=true" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href=" " class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/Workshops/5.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">Multisim Workshop</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                             <span class=" ">Date:</span> 11th October, 2020<br>
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/18rjZRgQWNtiGukC6sGvZYP3WqjyOVb53/view?usp=sharing"> Click Me</a><br>
+                            
+                           <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqdAcSux8dequKUx20dY1Xh3rYu1sPg1HbKMRw_2tvn8ft3w/viewform" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href="https://www.facebook.com/photo.php?fbid=359761144959631&set=t.100014898183375&type=3" class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/Workshops/6.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">VR Workshop</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                             <span class=" ">Date:</span> 12th October, 2020<br>
+                             
+                            
+                           <a href="https://docs.google.com/forms/d/e/1FAIpQLSfv16KSZSn1FloXfP6D82o2mL_0IXxna3CG7svVDhpk0jkGKw/viewform" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href="https://www.facebook.com/photo.php?fbid=359761144959631&set=t.100014898183375&type=3" class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/Workshops/7.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">Soft Computing Techniques in Water Resource Engineering</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            <span class=" ">Date :</span> 9th October, 2020<br>
+                            
+                            
+                           <a href="https://docs.google.com/forms/d/1twoOo-rQ5_RrvzqBx7kxidTb7sC6qLZiAn9GBzxvS2U/viewform?edit_requested=true" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-8 mb-30">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets8.lottiefiles.com/private_files/lf30_w5puR3.json"  background="transparent"  speed="1"  style="width: ; height: 600px;"  loop  autoplay></lottie-player>
+            </div>
+            <!-- Article Ends -->
+
+
+        </div>
+        <!-- Articles Ends -->
+    </div>
+
+</section>
+<!-- *****************************************workshop*********************************************** -->
+
+
+
+
+
+           <hr class="separator mt-4" id="b">
+            <div class="col-12">
+                <h3 class="text-uppercase pb-5 mb-0 text-left text-sm-center custom-title ft-wt-600" style="font-family: 'Aclonica', sans-serif;">Gaming</h3>
+            </div>
+
+<!-- *****************************************gaming*********************************************** -->
+
+
+
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <!-- Articles Starts -->
+        <div class="row">
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href="" class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/gaming/1.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href="">Among Us</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/1akOWLv2KBfQIwlFd1Nj4YpC410LF5Lqa/view?usp=sharing"> Click Me</a><br>
+                            <span class=" ">Number :</span> 8789064239<br>
+                           <a href="https://docs.google.com/forms/d/e/1FAIpQLSffms9lq3LhoVEDcGjC-yn_j-vlaBHoEeRQxexjulszPUCJeQ/viewform" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href=" " class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/gaming/2.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" "> Call of Duty </a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/1fhUt9Mp3y2_9oBmSIoOMOYkjmjiYUeMC/view?usp=sharing"> Click Me</a><br>
+                           
+                           <a href="https://docs.google.com/forms/d/e/1FAIpQLSesFAByhxKSz7WfhW_XoMODtmFVtcL_OF6ah3BZIPbeig4rtQ/viewform" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href=" " class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/gaming/3.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">Skribble.io</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/1QN0QKiwRPjXUe8BAxUJyGq3cOsFjxMW0/view?usp=sharing"> Click Me</a><br>
+                            <span class=" ">Number :</span> 9593906788<br>
+                           <a href="https://docs.google.com/forms/d/e/1FAIpQLScGm2nxI1PG3F2nDhZVLWsiNGUunfV8DaD0Pq32-TO2_FZBeg/viewform" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+        </div>
+        <!-- Articles Ends -->
+    </div>
+
+</section>
+<!-- *****************************************Gaming*********************************************** -->
+
+
+
+
+
+
+
+
+
+
+ <hr class="separator mt-4"id="c">
+            <div class="col-12">
+                <h3 class="text-uppercase pb-5 mb-0 text-left text-sm-center custom-title ft-wt-600" style="font-family: 'Aclonica', sans-serif;">Circuits</h3>
+            </div>
+
+<!-- *****************************************Circuits*********************************************** -->
+
+
+
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <!-- Articles Starts -->
+        <div class="row">
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href="" class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/Circuits/1.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">Electrovibe</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/18rjZRgQWNtiGukC6sGvZYP3WqjyOVb53/view?usp=sharing"> Click Me</a><br>
+                            <span class=" ">Number :</span>8116699300<br>
+                           <a href="https://docs.google.com/forms/d/e/1FAIpQLSeqdAcSux8dequKUx20dY1Xh3rYu1sPg1HbKMRw_2tvn8ft3w/viewform" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href=" " class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/Circuits/2.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">Circuit Wizard</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/1UBiE7KWyJksmk4nURKegm0qxx5OriEm-/view?usp=sharing"> Click Me</a><br>
+                            <span class=" ">Number :</span> 9749221244<br>
+                           <a href="https://docs.google.com/forms/d/e/1FAIpQLSepdQT1tu6jby2JeU73Q5aKDFvHzDhC5gwExPUkgxhQy3F_Tw/viewform" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_jsTRZT.json"  background="transparent"  speed="1"  style="width: 300px; height: 500px;"  loop  autoplay></lottie-player>
+                 
+            </div>
+            <!-- Article Ends -->
+
+        </div>
+        <!-- Articles Ends -->
+    </div>
+
+</section>
+<!-- *****************************************Circuits*********************************************** -->
+
+
+
+
+
+
+ <hr class="separator mt-2" id="d">
+            <div class="col-12">
+                <h3 class="text-uppercase pb-5 mb-0 text-left text-sm-center custom-title ft-wt-600" style="font-family: 'Aclonica', sans-serif;">Designing</h3>
+            </div>
+
+<!-- *****************************************Designing*********************************************** -->
+
+
+
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <!-- Articles Starts -->
+        <div class="row">
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href="" class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/Designing/1.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">Messtechnik-Waltonian</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/1LLELG7uEB-4k3OHwH0qUBJmDbMr2Mcj6/view?usp=sharing"> Click Me</a><br>
+                            <span class=" ">Number :</span>9547754533<br>
+                           <a href="https://docs.google.com/forms/d/e/1FAIpQLSegS39-fnreEgnKsYTYeA6rP8IlU4kkOTlqfiwDzY5F6mI6Qw/viewform" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href=" " class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/designing/2.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">Memography</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                           
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/1KMDxqcjtwbo3jDyFw42ARG9d-_eiZ8pC/view?usp=sharing"> Click Me</a><br>
+                            <span class=" ">Number :</span> 8617638508<br>
+                           <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpbLnBRJ_87XJacoG9durXaGqb40QjqnJkxFGz7sCwAVjmHA/viewform" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href=" " class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/designing/3.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">Design your Dream Home</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                           
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/1xSVMlK6wHYtEXjXU7ZM5AhqklWENHG8A/view?usp=sharing"> Click Me</a><br>
+                            <span class=" ">Number :</span> 8471955298<br>
+                           <a href="https://docs.google.com/forms/d/1EL9JOswFw9DYDSIYnuP2kMkr5s-hiCYQ0lNocXJ5nFo/viewform?edit_requested=true" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+            
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href=" " class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/designing/4.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" "> Mechatronics</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/1vXWtmFWQ_4S-iq-w7QVijJ0Qy1lS7Sln/view?usp=sharing"> Click Me</a><br>
+                            <span class=" ">Number :</span> 7667258859<br>
+                           <a href="https://docs.google.com/forms/d/e/1FAIpQLSftRV-lhJCftPigBKyvLn_CmjPiUCEu5ZScXIpcHabmuoIKtg/viewform" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href=" " class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/designing/5.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">VRoom</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/1jCPN3uGPc1_BmqSPkCX51LXgjSAche7y/view?usp=sharing"> Click Me</a><br>
+                            <span class=" ">Number :</span> 7688075551<br>
+                           <a href="https://docs.google.com/forms/d/e/1FAIpQLSfv16KSZSn1FloXfP6D82o2mL_0IXxna3CG7svVDhpk0jkGKw/viewform" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+
+             <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets1.lottiefiles.com/packages/lf20_PuCnC9.json"  background="transparent"  speed="2"  style="width: ; height: 500px;"  loop  autoplay></lottie-player>
+            </div>
+            <!-- Article Ends -->
+
+
+
+
+
+        </div>
+    </div>
+</section>
+<!-- *****************************************Designing*********************************************** -->
+
+
+
+
+
+ <hr class="separator mt-2" id="e">
+            <div class="col-12">
+                <h3 class="text-uppercase pb-5 mb-0 text-left text-sm-center custom-title ft-wt-600" style="font-family: 'Aclonica', sans-serif;">Talent Hunt</h3>
+            </div>
+
+<!-- *****************************************Talent Hunt*********************************************** -->
+
+
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <!-- Articles Starts -->
+        <div class="row">
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href="" class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/talenthunt/1.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">War of Perceptions </a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                           
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/18P1WeIqZc_ViIUIPRILHz2Ngl0aM5gTn/view?usp=sharing"> Click Me</a><br>
+                            <span class=" ">Number :</span> +916294517844<br>
+                           <a href="https://docs.google.com/forms/d/e/1FAIpQLSfEM0cFAFchm46_96bEc0YShbMmrJZLeCrZ-yrAaLhTqThe0w/viewform" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href=" " class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/talenthunt/2.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" "> Mind Mingles</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/1pCSeOwLfk7gB8Gf3Mn8Hfw19pTYqjbzi/view?usp=sharing"> Click Me</a><br>
+                           
+                           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdw0CwKhSgIDvBQGD-0-InaJQy5x-eLWeLyzpnDN_k76lRpVA/viewform" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href=" " class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/talenthunt/3.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">Business Plan</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                           
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/1BItRqydvN6gkNeJe2al_2k-e-Eq9U0zr/view?usp=sharing"> Click Me</a><br>
+                            <span class=" ">Number :</span> 7792927178<br>
+                           <a href="https://docs.google.com/forms/d/e/1FAIpQLSf2Lvf7z8c73twYG9rNGN22wvDXXeF8s8spDL0ocsEAUIRpow/viewform?vc=0&c=0&w=1&flr=0" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+            
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href=" " class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/talenthunt/4.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" "> Hackit</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/1QygSULuSNCFVq0ITFUxZmHzMcZYs5_vK/view?usp=sharing"> Click Me</a><br>
+                            <span class=" ">Number :</span> 8001968861<br>
+                           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdSR-gJ3okr42roiBfdP9aGuEKo419Q9qqtzgcE1cRnajtZrQ/viewform" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-30 container">
+                
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets7.lottiefiles.com/packages/lf20_VczlJO.json"  background="transparent"  speed="1"  style="width: ; height: 700px;"  loop  autoplay></lottie-player>
+            </div>
+            <!-- Article Ends -->
+            
+
+
+
+
+        </div>
+    </div>
+</section>
+<!-- *****************************************Talent Hunt*********************************************** -->
+
+
+
+
+ <hr class="separator mt-2" id="f">
+            <div class="col-12">
+                <h3 class="text-uppercase pb-5 mb-0 text-left text-sm-center custom-title ft-wt-600" style="font-family: 'Aclonica', sans-serif;">Quizzes and Competitions</h3>
+            </div>
+
+<!-- *****************************************quizzes and copitition*********************************************** -->
+
+
+
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <!-- Articles Starts -->
+        <div class="row">
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href=" " class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/quizzes/1.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">Quizenics</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/16zu99ZkzxwcPd8YfXE43GUM8IclwDTrA/view?usp=sharing"> Click Me</a><br>
+                            <span class=" ">Number :</span> 8789064239<br>
+                           <a href="https://docs.google.com/forms/d/1MOZQN70mlFUC-wqLTcSDiYHEBgDEs4kA7yhRLknfv_Y/viewform?edit_requested=true" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href=" " class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/quizzes/2.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">Technical Quiz in Construction Materials</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/1idFN2Sk0Vfr0LXxCNdc647XAJXQDDnZG/view?usp=sharing"> Click Me</a><br>
+                            <span class=" ">Number :</span> 8777436208<br>
+                           <a href="https://docs.google.com/forms/d/1ziwYWnmboylf6rEmUmIypcVsAYP41ORt7AL_lXiw5Hk/viewform?edit_requested=true" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href=" " class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/quizzes/3.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">Business Quize</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/1BItRqydvN6gkNeJe2al_2k-e-Eq9U0zr/view?usp=sharing"> Click Me</a><br>
+                            <span class=" ">Number :</span> 8306854519<br>
+                           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdw280gPvt0l4Gtv4YfGPPfrjQwDdJ_U8ZVCQ5Yqf5u4NhWuw/viewform" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href=" " class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/quizzes/4.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">Code From Home</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/1j944aBYxEJQIxp4ZZeVVcJuzu-DYW9RK/view?usp=sharing"> Click Me</a><br>
+                            <span class=" ">Number :</span> 897277338<br>
+                           <a href="https://www.hackerrank.com/uem-code-from-home/" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+            
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href=" " class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/quizzes/5.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">Virtual Trading Competition</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/1coe9k5nHvng9n1-gjoDKV3-4nLdbr0H9/view?usp=sharing"> Click Me</a><br>
+                            <span class=" ">Number :</span> 6376464004<br>
+                           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdfhIcMQjAlMMR615wygO0rb9EQHOQn3XsaQo2E4eKtSTSACg/viewform" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href=" " class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/quizzes/6.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">Physiodetector</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/1Dck5SDuJ-fdzh55iPmPPc55r-cuguIIE/view?usp=sharing"> Click Me</a><br>
+                          
+                           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdw0CwKhSgIDvBQGD-0-InaJQy5x-eLWeLyzpnDN_k76lRpVA/viewform" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+        </div>
+    </div>
+</section>
+<!-- *****************************************Quizzes and competitions*********************************************** -->
+
+
+
+
+
+ <hr class="separator mt-2" id="g">
+            <div class="col-12">
+                <h3 class="text-uppercase pb-5 mb-0 text-left text-sm-center custom-title ft-wt-600 text-center" style="font-family: 'Aclonica', sans-serif;">Tech and Fun</h3>
+            </div>
+
+<!-- *****************************************Tech and Fun*********************************************** -->
+
+
+
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <!-- Articles Starts -->
+        <div class="row">
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href=" " class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/techandfun/1.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">Techception</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                           
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/1TomDJ21J6Bfm9isXqZ4cJPer5oz7fcEl/view?usp=sharing"> Click Me</a><br>
+                            <span class=" ">Number :</span> 9564353745<br>
+                           <a href="https://docs.google.com/forms/d/e/1FAIpQLSe23t5_AfkdnVkxlZJBeU3xuHMJTJyv9kXdnPQsG219r0wH6A/viewform" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href=" " class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/techandfun/2.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">TechBuzz</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/1qEKMxmimbXYYa7UPdt24EJGP0DDjqA5U/view?usp=sharing"> Click Me</a><br>
+                            <span class=" ">Number :</span> 9749221244<br>
+                           <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4Sr-u092wmK7HMYo_B5eP61JN_Dcx0kSpSgN4ZZt-HUz5wQ/viewform" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href=" " class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/techandfun/3.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">Recent Technical Topics about Civil Engineering</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/1idFN2Sk0Vfr0LXxCNdc647XAJXQDDnZG/view?usp=sharing"> Click Me</a><br>
+                            <span class=" ">Number :</span> 8840971810<br>
+                           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdH8dFlsFs4K-A0ZSpWGdDD4_cTvRipk1sETFaAjaRqkY8taQ/viewform" class="btn btn-about mt-2">To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+            
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href=" " class="d-block position-relative overflow-hidden">
+                            <img src="../dark/events/techandfun/4.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href=" ">Tell Me Who I Am?</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            
+                             <span class=" ">Detalis :</span><a href="https://drive.google.com/file/d/1yWiLYLMqa18FsxJdKOwWXQfY2nNAodcS/view?usp=sharing"> Click Me</a><br>
+                           
+                           <a href="https://docs.google.com/forms/d/e/1FAIpQLSdw0CwKhSgIDvBQGD-0-InaJQy5x-eLWeLyzpnDN_k76lRpVA/viewform" class="btn btn-about mt-2"> To Register</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-6 mb-30">
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets6.lottiefiles.com/packages/lf20_tWg5a4.json"  background="transparent"  speed="0.7"  style="height: 500px;"  loop  autoplay></lottie-player>
+            </div>
+            <!-- Article Ends -->
+
+
+        </div>
+    </div>
+</section>
+<!-- *****************************************Tech and fun*********************************************** -->
+
+
+<hr class="separator">
+
+<p class="text-center">Created by Student of UEMJ <span class="text-danger"><a style="color: inherit;text-decoration: none;" href="https://www.youtube.com/channel/UCtmdG03nDBhw6wZzeN3ChMw">@AyushMaji</a></span></p>
+
+
+
+<!-- Template JS Files -->
+<script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/styleswitcher.js"></script>
+<script src="js/preloader.min.js"></script>
+<script src="js/fm.revealator.jquery.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpGridGallery.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+
+
+<!-- Mirrored from slimhamdi.net/tunis/dark/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 01 Oct 2020 06:09:39 GMT -->
+</html>

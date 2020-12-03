@@ -1,0 +1,374 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+     <link href="https://fonts.googleapis.com/css2?family=Aclonica&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Template Google Fonts -->
+    <link href="../../../fonts.googleapis.com/cssdda2.css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="../../../fonts.googleapis.com/cssab6d.css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
+
+    <!-- Template CSS Files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/preloader.min.css" rel="stylesheet">
+    <link href="css/circle.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- CSS Skin File -->
+    <link href="css/skins/yellow.css" rel="stylesheet">
+
+    <!-- Live Style Switcher - demo only -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css" />
+    <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css" />
+    <link rel="alternate stylesheet" type="text/css" title="blueviolet" href="css/skins/blueviolet.css" />
+    <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css" />
+    <link rel="alternate stylesheet" type="text/css" title="magenta" href="css/skins/magenta.css" />
+    <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css" />
+    <link rel="alternate stylesheet" type="text/css" title="purple" href="css/skins/purple.css" />
+    <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css" />
+    <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css" />
+    <link rel="stylesheet" type="text/css" href="css/styleswitcher.css" />
+
+    <!-- Modernizr JS File -->
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+<body class="blog light">
+
+
+<!-- Live Style Switcher Starts - demo only -->
+<div id="switcher" class="">
+    <div class="content-switcher">
+        <h4>STYLE SWITCHER</h4>
+        <ul>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('purple');" title="purple" class="color"><img src="img/styleswitcher/purple.png" alt="purple"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="img/styleswitcher/red.png" alt="red"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blueviolet');" title="blueviolet" class="color"><img src="img/styleswitcher/blueviolet.png" alt="blueviolet"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="img/styleswitcher/blue.png" alt="blue"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="img/styleswitcher/goldenrod.png" alt="goldenrod"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('magenta');" title="magenta" class="color"><img src="img/styleswitcher/magenta.png" alt="magenta"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="img/styleswitcher/yellowgreen.png" alt="yellowgreen"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="img/styleswitcher/orange.png" alt="orange"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="img/styleswitcher/green.png" alt="green"/></a>
+            </li>
+            <li>
+                <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="img/styleswitcher/yellow.png" alt="yellow"/></a>
+            </li>
+        </ul>
+        <a href="../dark/project.html" class="waves-effect waves-light font-weight-700 purchase"><i class="fa fa-moon-o"></i>Dark </a>
+        <div id="hideSwitcher">&times;</div>
+    </div>
+</div>
+<div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog fa-spin"></i></div>
+<!-- Live Style Switcher Ends - demo only -->
+
+
+<!-- Header Starts -->
+<header class="header" id="navbar-collapse-toggle">
+    <!-- Fixed Navigation Starts -->
+    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+        <li class="icon-box ">
+            <i class="fa fa-home"></i>
+            <a href="light.html">
+                <h2>Home</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-user"></i>
+            <a href="about.html">
+                <h2>About</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-briefcase"></i>
+            <a href="events.html">
+                <h2>Events</h2>
+            </a>
+        </li>
+        <li class="icon-box active">
+            <i class="fa fa fa-code"></i>
+            <a href="project.html">
+                <h2>Projects</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-phone"></i>
+            <a href="contact.html">
+                <h2>Contact</h2>
+            </a>
+        </li>
+        <li class="icon-box">
+            <i class="fa fa-thermometer-empty"></i>
+            <a href="covid.html">
+                <h2>Covid19</h2>
+            </a>
+        </li>
+    </ul>
+    <!-- Fixed Navigation Ends -->
+
+    
+    <!-- Mobile Menu Starts -->
+    <nav role="navigation" class="d-block d-lg-none">
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul class="list-unstyled" id="menu">
+                 
+                <li><a href="light.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                <li><a href="events.html"><i class="fa fa-folder-open"></i><span>Events</span></a></li>
+                <li class="active"><a href="project.html"><i class="fa fa fa-code"></i><span>projects</span></a></li>
+                <li><a href="contact.html"><i class="fa fa-phone"></i><span>contact</span></a></li>
+                <li><a href="covid.html"><i class="fa fa-thermometer-empty"></i><span>covid19</span></a></li>
+                 <a href="../dark/project.html" class="btn btn-about mt-4 ml-4 text-dark"><i class="fa fa-moon-o"></i> Dark </a>
+            </ul>
+
+        </div>
+    </nav>
+    <!-- Mobile Menu Ends -->
+</header>
+<!-- Header Ends -->
+
+
+<!-- Page Title Starts -->
+<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+    <h1>Our<span> Project</span></h1>
+    <span class="title-bg">UEM</span>
+</section>
+<!-- Page Title Ends -->
+
+
+                <!-- Skills Starts -->
+       
+
+
+
+
+ <div class="container">
+        <div class="row">
+
+            <!-- Personal Info Starts -->
+               <div class="col-12 col-lg-4 col-xl-4" style="height:500px;">
+              <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_z01atlv1.json"  background="transparent"  speed="1"  style="width: ; height: 500px;"  loop  autoplay></lottie-player>
+
+               </div>
+            <!-- Personal Info Ends -->
+
+
+            <!-- Boxes Starts -->
+                <div class="col-0 col-lg-4 col-xl-4 ">
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                   <lottie-player src="https://assets5.lottiefiles.com/packages/lf20_xjhwr9wv.json"  background="transparent"  speed="1"  style=" height:400px;"  loop  autoplay></lottie-player>
+                
+                </div>
+            <!-- Boxes Ends -->
+
+             <!-- Boxes Starts -->
+                <div class="col-0 col-lg-4 col-xl-4 ">
+
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                     <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_e6FSqJ/data.json"  background="transparent"  speed="1"  style=" height: 400px;"  loop  autoplay></lottie-player>
+                
+                </div>
+          
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+<!-- Main Content Starts -->
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <!-- Articles Starts -->
+        <div class="row">
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href="https://www.facebook.com/photo.php?fbid=359761144959631&set=t.100014898183375&type=3" class="d-block position-relative overflow-hidden">
+                            <img src="../dark/img/blog/blog-1.jpg" class="img-fluid" alt="Blog Post">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href="https://www.facebook.com/photo.php?fbid=359761144959631&set=t.100014898183375&type=3">Sreyaskam Ghoshal</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            <p>Aritificial Intelligence(AI) based voice-controlled virtual assistant designed for computer. 
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href="https://www.facebook.com/100014898183375/videos/pcb.263059254200679/263057194200885/" class="d-block position-relative overflow-hidden">
+                            <img src="../dark/img/blog/blog-2.jpg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href="https://www.facebook.com/100014898183375/videos/pcb.263059254200679/263057194200885/">1st year student of 2017</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            <p> Automation system.....
+                                The lights and switches of buildings are being controlled from mobile app, and the lights outside the building are dependent on sunlight.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href="https://www.facebook.com/biswajoy.chatterjee.108/videos/886103258562939/" class="d-block position-relative overflow-hidden">
+                            <img src="../dark/img/blog/blog-3.jpg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href="https://www.facebook.com/biswajoy.chatterjee.108/videos/886103258562939/">Ayush Maji</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            <p>The website (NASA) has been designed for inspiration and is very beneficial for the people interested in space.They can explore their knowledge through animation.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href=" https://tinyurl.com/chakdeapp" class="d-block position-relative overflow-hidden">
+                            <img src="../dark/img/blog/blog-4.png" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href="https://tinyurl.com/chakdeapp">Teknesya Networks</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            <p>India's own Short Video Sharing App - ChakDe
+                               With ChakDe, you can share your creativity with the world. 
+                               Just Shoot a video and just ChakDe. 
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href="https://www.facebook.com/photo?fbid=528752331080484&set=a.111531912802530" class="d-block position-relative overflow-hidden">
+                            <img src="../dark/img/blog/blog-5.PNG" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href="https://www.facebook.com/photo?fbid=528752331080484&set=a.111531912802530">The 2nd year and 3rd year students(2019)</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            <p>The bike has two modes, firstly it can be operated like a normal cycle(Numitor-18). Then by pressing a switch, the mode of the cycle can be changed, and it can be made to run completely on battery, without any need to pedal.
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+
+            <!-- Article Starts -->
+            <div class="col-12 col-md-6 col-lg-6 col-xl-4 mb-30">
+                <article class="post-container">
+                    <div class="post-thumb">
+                        <a href="https://www.facebook.com/100008510237701/videos/pcb.2378401275786857/2378396122454039/" class="d-block position-relative overflow-hidden">
+                            <img src="../dark/img/blog/blog-6.PNG" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="post-content">
+                        <div class="entry-header">
+                            <h3><a href="https://www.facebook.com/100008510237701/videos/pcb.2378401275786857/2378396122454039/">2nd-year students(2019)</a></h3>
+                        </div>
+                        <div class="entry-content open-sans-font">
+                            <p>a robotic platform for the bomb disposal unit. The robot has a camera to capture and transmit live video of territory to the remote station. The whole system is controlled from anywhere in the world based on IoT. 
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <!-- Article Ends -->
+            <!-- Pagination Starts -->
+           
+            <!-- Pagination Ends -->
+        </div>
+        <!-- Articles Ends -->
+    </div>
+
+</section>
+
+<hr class="separator">
+
+<p class="text-center">Created by Student of UEMJ <span class="text-danger"><a style="color: inherit;text-decoration: none;" href="https://www.youtube.com/channel/UCtmdG03nDBhw6wZzeN3ChMw">@AyushMaji</a></span></p>
+<!-- Template JS Files -->
+<script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/styleswitcher.js"></script>
+<script src="js/preloader.min.js"></script>
+<script src="js/fm.revealator.jquery.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/cbpGridGallery.js"></script>
+<script src="js/jquery.hoverdir.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+
+
+</html>
